@@ -1,13 +1,13 @@
 # Demand Forecasting
 
-## 1.1 General Information and Purpose
+## General Information and Purpose
 - **Service Name/Title:** `demand_forecasting`
 - **Description and purpose:** Accurately forecast customer demand to assess energy flexibility capabilities and support market participation decisions.
 - **Owner/Contact Information:** ICCS
 
 ---
 
-## 1.2 Functional Requirements
+## Functional Requirements
 1. The system should collect and process real-time data from IoT devices and smart meters.
 2. The system should access historical consumption data provided by energy suppliers.
 3. The system should perform data pre-processing, including cleaning and normalization.
@@ -17,7 +17,7 @@
 
 ---
 
-## 1.3 Non-Functional Requirements
+## Non-Functional Requirements
 - Forecasts should be available in real-time or near real-time (within a few seconds).
 - The accuracy of demand forecasts should be maintained at a high level to support decision-making.
 - System uptime should meet a minimum of 99.9%.
@@ -26,9 +26,9 @@
 
 ---
 
-## 1.4 Service Interfaces
+## Service Interfaces
 
-### 1.4.1 API Endpoints
+### API Endpoints
 
 #### Endpoint 1 — Train Demand Forecasting Model
 - **URL:** `/forecast/demand/train`
@@ -104,7 +104,7 @@
 
 ---
 
-## 1.5 UI Mock-ups
+## UI Mock-ups
 The user interface (embedded in the Aggregator Platform) should allow users to:  
 - Input the start and end time for forecasts.  
 - Select granularity options.  
@@ -119,7 +119,7 @@ UI elements include:
 
 ---
 
-## 1.6 Data Model
+## Data Model
 
 ### Entities and Relationships
 - **Users** can manage one or more **Houses**.  
@@ -134,7 +134,7 @@ UI elements include:
 
 ---
 
-## 1.7 Integration and Dependencies
+## Integration and Dependencies
 - **LFM API Interface (via Bid System):** Forecasts support bid formation, pricing, and LFM operations.  
 - **Internal Data Sources:** Historical consumption data, IoT telemetry, and past bids.  
 - **Edge and Cloud Integration:** Edge devices and cloud infrastructure for real-time inputs and forecasts.  
@@ -147,7 +147,7 @@ UI elements include:
 
 ---
 
-## 1.8 Security and Privacy
+## Security and Privacy
 - **Data Sensitivity:** Customer-level usage forecasts, DER profiles, and market-sensitive outputs.  
 - **Encryption:** TLS 1.2+ in transit, AES-256 at rest, encrypted backups.  
 - **RBAC:** Aggregator Operator (forecasts, training), System Admin (full access), Data Analyst (anonymized only).  
