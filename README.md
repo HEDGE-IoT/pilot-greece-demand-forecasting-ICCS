@@ -155,8 +155,6 @@ UI elements include:
 - **Anomaly Detection:** Flags unusual forecast requests, data injection attempts, and unauthorized access.  
 
 ---
-
-## 1.9 Pre-Demo Phase WP5
 An end-to-end forecasting pipeline was implemented and tested with IoT demo data.  
 
 ### Functionality
